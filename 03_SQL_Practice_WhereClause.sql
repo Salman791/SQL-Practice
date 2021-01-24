@@ -1,10 +1,3 @@
--- Return all the products
--- name
--- unit price
--- new price (unit price * 1.1)
-
-SELECT 
-	name, 
-    unit_price, 
-    unit_price * 1.1 AS "New Unit Price"
-FROM products
+SELECT *
+FROM customers
+WHERE birth_date > '1990-01-01'
